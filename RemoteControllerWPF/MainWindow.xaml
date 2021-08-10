@@ -1,0 +1,23 @@
+﻿<Window x:Class="RACApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RACApplication"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        Title="Remote Application Controller" Height="381.429" Width="338.6" Loaded="Window_Loaded" ResizeMode="CanMinimize">
+    <Grid>
+        <Label x:Name="label" Content="Connection to Coordinator" HorizontalAlignment="Left" Margin="45,43,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="IMG_Coord" Height="30" Width="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,43,0,0" Source="images/buttonbad.png" />
+        <Label x:Name="label_Copy" Content="Resolved SDP (STUN Description)" HorizontalAlignment="Left" Margin="45,74,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="IMG_Stun" Height="30" VerticalAlignment="Top" Margin="10,75,0,0" Source="images/buttonbad.png" HorizontalAlignment="Left" Width="30" />
+        <Label x:Name="label_Copy1" Content="Available Servers:" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="LB_Servers" Margin="10,141,10,0" SelectionChanged="LB_Servers_SelectionChanged" Height="151" VerticalAlignment="Top"/>
+        <Button x:Name="BTN_Connect" Content="Connect" HorizontalAlignment="Left" Margin="10,0,0,6.8" Width="75" Height="25" VerticalAlignment="Bottom" Click="BTN_Connect_Click"/>
+        <Label x:Name="label_Copy2" Content="Worker Active" HorizontalAlignment="Left" Margin="45,11,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="IMG_Worker" Height="30" Width="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,11,0,0" Source="images/buttonbad.png" />
+        <Image x:Name="IMG_ConnectionState" Height="30" VerticalAlignment="Bottom" Margin="0,0,10,10" Source="images/buttonbad.png" HorizontalAlignment="Right" Width="30" />
+
+    </Grid>
+</Window>
